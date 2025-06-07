@@ -1,5 +1,5 @@
 
-#Proiect Web "The Legend of Zelda"
+# Proiect Web "The Legend of Zelda"
 
 ## 1. Titlul proiectului
 
