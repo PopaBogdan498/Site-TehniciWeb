@@ -1,8 +1,5 @@
-Desigur! Iată README-ul în format Markdown, adaptat cu numele și detaliile tale și fără secțiunea "6. Structura proiectului".
 
----
-
-# README: Proiect Web "The Legend of Zelda"
+#Proiect Web "The Legend of Zelda"
 
 ## 1. Titlul proiectului
 
@@ -63,5 +60,3 @@ Acest proiect a fost realizat de **Popa Bogdan** ca parte a cursului de **Tehnic
 O parte din conținutul informativ și inspirația pentru design au fost preluate de pe site-ul oficial *The Legend of Zelda*:
 
 * [The official site for The Legend of Zelda series](https://zelda.nintendo.com)
-
----
