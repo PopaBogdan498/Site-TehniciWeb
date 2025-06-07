@@ -1,0 +1,728 @@
+html {
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+  }
+
+body {
+    background-image:
+        linear-gradient(to bottom, rgba(255, 190, 0, 0.75), rgba(44, 32, 0, 0.9)),
+        url('triforce-bgr-pattern.png');
+    background-repeat: repeat;
+     background-size: 10vh auto;
+    background-attachment: scroll;
+    position:relative;
+    min-height: 400vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:auto;
+    height:13vw;
+}
+
+.title {
+    width:25vw;
+    height:auto;
+    align-self: center;
+    justify-self: center;
+    margin-right: 9.38vw;
+    margin-top: 2vh;
+}
+
+.header_item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+}
+
+.nintendo_logo img {
+    width: 7.81vw;
+    height: auto;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
+ h6 {
+    margin-left: -15px;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+ .hyrule_png0{
+    position:absolute;
+    top:10.43vw;
+    z-index: 5;
+    width:100%;
+    height:auto;
+ }
+
+.hyrule_png{
+    margin-top:-2.6vw;
+    display:inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.menu{
+    width: 2.08vw;
+    height:auto;
+    margin-top:2vh;
+    margin-right:1vw;
+}
+
+.sliding-menu {
+    position: fixed;
+    top: 0;
+    right: -20.83vw;
+    width: 20.83vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    overflow: visible;
+    z-index: 10;
+}
+
+.menu:hover + .sliding-menu, .sliding-menu:hover {
+    right: 0;
+}
+
+.menu_item {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'Bitter', serif;
+}
+
+.blocks{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display:flex;
+    flex-direction:row;
+}
+.bdl {
+    order:-1;
+    width:30px;
+    height:auto;
+}
+
+.bdr{
+    width:30px;
+    height:auto;
+}
+
+.menu_item:hover ~ .bdl {
+    transform: translateX(-20px);
+}
+
+.menu_item:hover ~ .bdr {
+    transform: translateX(20px);
+}
+
+.intro-animation {
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+    position:relative;
+    display:block;
+}
+
+.intro-vid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    pointer-events: none;
+    display:block;
+}
+
+.Subtitles {
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'Bitter', serif;
+    font-size:2rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.simg {
+    height: 15px;
+    width: auto;
+    align-self: center;
+    filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
+}
+
+ p {
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'Bitter', serif;
+    font-size:2rem;
+}
+
+h1 {
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'Bitter', serif;
+    font-size:3rem;
+}
+
+.introblock{
+    width:80%;
+    margin-left:10%
+}
+
+.block1 {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text_block1 {
+    width: 27.71vw;
+    max-width: 27.71vw;
+    height: 300px;
+    max-height: 300px;
+    overflow: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    scrollbar-width: none;
+}
+
+.text_block2 {
+    width: 27.71vw;
+    max-width: 27.71vw;
+    height: 300px;
+    max-height: 300px;
+    overflow: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    scrollbar-width: none;
+    text-align:end;
+}
+
+.border1 {
+    background-image: url("tezuka-miyamoto.jpg");
+    background-size:cover;
+    background-position:center;
+    height:300px;
+    width:533px;
+    display:block;
+    margin: 0;
+}
+
+.border2 {
+    background-image: url("games.webp");
+    background-size:cover;
+    background-position:center;
+    height:300px;
+    width:590px;
+    display:block;
+    margin: 0;
+}
+
+.border3 {
+    background-image: url("gameplay.jpg");
+    background-size:cover;
+    background-position:center;
+    height:300px;
+    width:387px;
+    display:block;
+    margin: 0;
+}
+
+.k1{
+    height:125%;
+    width:114%;
+    margin-left:-6.5%;
+    margin-top: -6.5%;
+}
+
+.k2{
+    height:125%;
+    width:114%;
+    margin-left:-6.5%;
+    margin-top: -6%;
+}
+
+.k3{
+    height:125%;
+    width:114%;
+    margin-left:-6.5%;
+    margin-top: -9%;
+}
+
+.separator_DIN {
+    width:80vw;
+    height:0.3vw;
+    background: linear-gradient(to right, rgba(123, 42, 44, 0), rgba(123, 42, 44, 1), rgba(123, 42, 44, 0));
+    margin-bottom: 2vw;
+    display:flex;
+    margin-left:10vw;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    width:50vw;
+    height:73vw;
+    margin-left:0vw;
+}
+
+.games::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 73vw;
+    background-image: url("pattern.webp");
+    opacity: 0.5;
+  }
+
+.gam_group {
+    width:80vw;
+    margin-left:5vw;
+    margin-top:2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.gameblock{
+    display:flex;
+    flex-direction:row;
+}
+.glog1 {
+    height: auto;
+    width: 10.42vw;
+    object-fit: contain;
+    filter: drop-shadow(10px 10px 10px rgb(80, 56, 15));
+    margin-right: 7vw;
+}
+.text-display{
+    font-size:3rem;
+    -webkit-text-fill-color: #ffffff;
+    display: flex;
+    padding:5vw;
+    z-index: 999;
+}
+.pattern {
+    height: 40vw;
+    width: 100%;
+    object-fit:cover;
+    transform:translateY(-39vw);
+    position:absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.separator_NAYRU {
+    width:80vw;
+    height:0.3vw;
+    background: linear-gradient(to right, rgba(55, 55, 104, 0), rgba(55,55,104,1), rgba(55, 55, 104, 0));
+    margin-bottom: 20px;
+    display:flex;
+    margin-left:10vw;
+    margin-top:60px;
+}
+
+.ouroboros{
+    position:absolute;
+    width:80%;
+    height:auto;
+    z-index:-1;
+    opacity:0.5;
+    margin-left:10%;
+    margin-top:80px;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+.story_intro, .story1 {
+    text-align:center;
+    width:80%;
+    margin-left:10%;
+    margin-top:20px;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.story_intro.visible, .story1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.triforce-button1 {
+    width: 15.62vw;
+    height: 15.62vw;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 7.81vw;
+    margin-bottom: -1.85vw;
+    background-size: 100% 200%;
+    background-image: url('triforce-power-sprite.png');
+    background-position: top center;
+}
+
+.triforce-button2 {
+    width: 15.62vw;
+    height: 15.62vw;
+    display: inline-block;
+    cursor: pointer;
+    background-size: 100% 200%;
+    background-image: url('triforce-wisdom-sprite.png');
+    background-position: top center;
+    margin-bottom: 10px;
+
+}
+.triforce-button3 {
+    width: 15.62vw;
+    height: 15.62vw;
+    display: inline-block;
+    cursor: pointer;
+    background-size: 100% 200%;
+    background-image: url('triforce-courage-sprite.png');
+    background-position: top center;
+    margin-left:-5px;
+    margin-bottom: 10px;
+}
+
+.triforce-button1:hover,
+.triforce-button2:hover,
+.triforce-button3:hover {
+    filter: brightness(150%);
+}
+
+.triforce {
+    width:80%;
+    margin-left: 10%;
+}
+
+.text1 {
+    height: auto;
+    width: 20%;
+    margin-left:32%;
+    margin-top: -13vw;
+    object-fit: contain;
+    position: absolute;
+    opacity:0;
+    transition: opacity 1s ease;
+    transition-delay: 1s;
+}
+
+.text2{
+    height: auto;
+    width: 20%;
+    margin-left:32%;
+    margin-top: -30vw;
+    object-fit: contain;
+    position: absolute;
+    opacity:0;
+    transition: opacity 1s ease;
+    transition-delay: 1s;
+}
+
+.text3{
+    height: auto;
+    width: 20%;
+    margin-left:32%;
+    margin-top: -30vw;
+    object-fit: contain;
+    position: absolute;
+    opacity:0;
+    transition: opacity 1s ease;
+    transition-delay: 1s;
+}
+
+.image1 {
+    height: 30vw;
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    margin-left: 29.69vw;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+.image2 {
+    height: 30vw;
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    margin-top: -15vw;
+    margin-left: 38.54vw;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+.image3 {
+    height: 30vw;
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    margin-top: -15vw;
+    margin-left: 21.88vw;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+.gimg1 {
+    height: 1.55vw;
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    margin-top: 11.3vw;
+    margin-left: -11.2vw;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+.gimg2 {
+    height: 1.8vw;
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    margin-top: 10.8vw;
+    margin-left: -5.6vw;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+.gimg3 {
+    height: 1.8vw;
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    margin-top: 5.25vw;
+    margin-left: -9.4vw;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#button1:checked + label {
+    background-image: url('triforce-power-sprite.png');
+    background-position: bottom center;
+}
+
+#button1:checked ~ .image1,
+#button1:checked ~ .gimg1,
+#button1:checked ~ .text1 {
+    opacity: 1;
+}
+
+#button2:checked + label {
+    background-image: url('triforce-wisdom-sprite.png');
+    background-position: bottom center;
+}
+
+#button2:checked ~ .image2,
+#button2:checked ~ .gimg2,
+#button2:checked ~ .text2 {
+    opacity: 1;
+}
+
+#button3:checked + label {
+    background-image: url('triforce-courage-sprite.png');
+    background-position: bottom center;
+}
+
+#button3:checked ~ .image3,
+#button3:checked ~ .gimg3,
+#button3:checked ~ .text3 {
+    opacity: 1;
+}
+
+.triforce_images {
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.separator_FARORE {
+    margin-top:30px;
+    margin-bottom:30px;
+    width:80vw;
+    margin-left:10vw;
+    height:0.3vw;
+    background: linear-gradient(to right, rgba(55, 121, 64, 0), rgba(55, 121, 64, 1), rgba(55, 121, 64, 0));
+    display:block;
+}
+
+.block2{
+    width:80%;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.mimg{
+    width: 33.33vw;
+    height:20vw;
+    object-fit: cover;
+}
+
+.ring{
+    position:absolute;
+    margin-left: 14.27vw;
+    margin-top:7.2vw;
+    display: inline-block;
+    transition: transform 1s linear;
+    z-index: 10;
+    height:5vw;
+}
+.play{
+    position:absolute;
+    margin-left: 16.15vw;
+    margin-top:8.5vw;
+    z-index: 5;
+    height:2.5vw;
+}
+
+.ring1{
+    position:absolute;
+    margin-left: 60vw;
+    margin-top:7.2vw;
+    display: inline-block;
+    transition: transform 1s linear;
+    z-index: 10;
+    height:5vw;
+}
+
+.play1{
+    position:absolute;
+    margin-left: 61.8vw;
+    margin-top:8.5vw;
+    z-index: 5;
+    height:2.5vw;
+}
+
+.ring:hover,
+.ring1:hover{
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.square {
+    width: 100%;
+    height: 50vw;
+    background-color: rgb(75, 3, 19);
+    margin-top:3vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-image: url('MMask.png');
+    background-repeat: repeat;
+    background-size: 7vw;
+    background-position: top left;
+}
+
+.final{
+    width:100%;
+    height:auto;
+    position:absolute;
+    margin-top: 0.5vw;
+}
+
+.final1{
+    width:100%;
+    height:auto;
+    position:absolute;
+    margin-top:-2.7vw;
+}
+
+.vid{
+    margin-top: -5vw;
+    height:40vw;
+    width:65vw;
+}
+
+.align{
+    margin-top: -3vw;
+    margin-bottom: 4vw;
+}
+
+.footer{
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'Bitter', serif;
+    font-size:2rem;
+}
+
+.footer_container{
+    height:200px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+
+.sdl {
+    order:-1;
+}
+
+.footer:hover ~ .sdl {
+    transform: translateX(-20px);
+}
+
+.footer:hover ~ .sdr {
+    transform: translateX(20px);
+}
+
+.arrow{
+    width: 5.21vw;
+    height:5vw;
+    margin-left: 5.21vw;
+}

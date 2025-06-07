@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Make your own id!</title>
+        <link rel="stylesheet" href="id.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <audio id="background-music" autoplay loop>
+            <source src="bgm.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div>
+            <h1 class="volume">Too loud? Change the volume here:</h1>
+            <label for="volume-control"></label>
+            <input type="range" id="volume-control" class="bar" min="0" max="1" step="0.1" value="0.5">
+        </div>
+        <h3>Make your own Zelda ID!</h3>
+      
+     <div id="container" class="create"> 
+       <form method="post" action="ID" target="_self" id="Form">
+        <fieldset>
+          <legend>ID data</legend>
+          <label for="name">
+            Character name:
+            <input type="text" id="name" name="name" class="form-input" minlength="3" maxlength="30" required>
+          </label>
+          <label for="item">
+            Favorite item:
+            <input type="text" id="item" name="item" class="form-input" minlength="5" maxlength="20" required>
+          </label>
+          <label for="number">
+            Number of games played: 
+            <input type="number" id="number" name="number" class="form-input" min="1" max="21" required>
+          </label> 
+          <label for="race">
+            Character race:
+            <select name="race" id="race" class="form-input" required>
+              <option value="Hylian">Hylian</option>
+              <option value="Sheikah">Sheikah</option>
+              <option value="Gerudo">Gerudo</option>
+              <option value="Sea Zora">Sea Zora</option>
+              <option value="River Zora">River Zora</option>
+              <option value="Goron">Goron</option>
+              <option value="Rito">Rito</option>
+              <option value="Deku Scrub">Deku Scrub</option>
+              <option value="Kokiri">Kokiri</option>
+              <option value="Twili">Twili</option>
+              <option value="Minish">Minish</option>
+              <option value="Korok">Korok</option>
+              <option value="Oocca">Oocca</option>
+              <option value="Kikwi">Kikwi</option>
+              <option value="Anouki">Anouki</option>
+              <option value="Other">Other(monster)</option>
+            </select>
+          </label>
+          <label for="age">
+            Age:
+            <input type="range" name="age" id="age" class="form-input" min="0" max="200" step="5" value="50" required>
+            <span id="slider-value">50</span>
+          </label>
+          <label for="avatar">
+
+            Avatar:
+            <input type="file" id="avatar" name="avatar" class="form-input" accept="image/*" required>
+          </label>
+        </fieldset>
+        <div class="submit" id="submit">
+            <img src="cta_button_left.png" class="deco" alt="Submit button decoration">
+            <h3 class="button">Download</h3>
+            <img src="cta_button_right.png" class="deco" alt="Submit button decoration"> 
+        </div>
+       </form>
+       <canvas class="canvas" id="canvas" width="400" height="300"  style="width: 400px; height: 300px;"></canvas>
+     </div>
+        <script src="id.js"></script>
+        <script>
+            volume();
+            age();
+            submit();
+            id();
+        </script>
+    </body>
+</html>
